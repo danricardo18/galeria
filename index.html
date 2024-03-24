@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="less/style.less">
+    
+</head>
+
+<body>
+    <header>
+        <section class="branding">
+            <h1>VINILOS DE TAYLOR SWIFT</h1>
+        </section>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="public/fondo.png"  media="(min-width: 1024px)">
+                <source srcset="public/fondo.png"  media="(min-width: 720px)">
+                <img src="public/fondo.png" alt="cafeteria">
+            </picture>
+        </section>
+        {{>gallery}}
+    </main>
+    <footer>
+        <p>&copy; 2024 Taylor</p>
+    </footer>
+</body>
+
+</html>
